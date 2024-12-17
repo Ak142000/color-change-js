@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width:350px;
+            height:300px;
+            justify-content: center;
+            border:2px solid black;
+            text-align: center;
+            font-size: 40px;   
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>welcom to my page</p>
+    </div>
+    <button onclick="colorchange()">changed box-color</button>
+<script>
+let click=document.getElementById("box")
+console.log(click);
+let colors=["red","yellow","orange","black","brown","pink"];
+console.log(Math.round(Math.random()*colors.length));
+
+function colorchange(){
+    
+        click.style.disply="block";  
+        click.style.backgroundColor=colors[Math.round(Math.random()*colors.length)]
+    
+}
+</script>
+</body>
+</html>
